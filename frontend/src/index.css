@@ -1,0 +1,537 @@
+/* 
+  HealthPulse AI - Professional Design System
+  Focuses on minimalist slate grays, clean typography, flat surfaces, and sharp line boundaries.
+  No game-like glowing gradients or excessive decorations.
+*/
+
+:root {
+  /* Dark Theme Palette */
+  --bg-main: #0b0f17;
+  --bg-card: #151a26;
+  --bg-bubble-user: #222938;
+  --bg-bubble-coach: #1c2230;
+  --bg-input: #111622;
+  
+  --color-accent: #3b82f6; /* Steel Blue */
+  --color-accent-hover: #2563eb;
+  --color-accent-glow: rgba(59, 130, 246, 0.1);
+  
+  --color-success: #10b981; /* Emerald Green */
+  --color-danger: #ef4444;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-border-active: rgba(59, 130, 246, 0.3);
+  
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  
+  /* Fonts */
+  --font-system: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-system);
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-bubble-user);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Setup Wizard Onboarding Screen */
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+  background-color: var(--bg-main);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 580px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.auth-header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 20px;
+}
+
+.auth-logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.auth-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* Wizard Steps Indicator */
+.wizard-progress {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.wizard-dot {
+  flex: 1;
+  height: 4px;
+  background-color: var(--color-border);
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.wizard-dot.active {
+  background-color: var(--color-accent);
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: var(--bg-input);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.92rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-accent-glow);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-bubble-user);
+  border-color: var(--text-secondary);
+}
+
+.btn-sm {
+  padding: 8px 14px;
+  font-size: 0.82rem;
+}
+
+/* Main Application Layout */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Top Navigation Bar */
+.top-navbar {
+  height: 64px;
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  flex-shrink: 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Workspace Panels */
+.workspace-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Profile Sidebar (Left) */
+.profile-sidebar {
+  width: 320px;
+  background-color: var(--bg-card);
+  border-right: 1px solid var(--color-border);
+  padding: 24px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .workspace-container {
+    flex-direction: column;
+  }
+  .profile-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    max-height: 160px;
+    padding: 14px 16px;
+    gap: 10px;
+    overflow-y: auto;
+  }
+  .sidebar-section {
+    padding-bottom: 8px;
+  }
+  .sidebar-section-title {
+    font-size: 0.68rem;
+    margin-bottom: 6px;
+  }
+  .profile-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+  .meta-label {
+    font-size: 0.62rem;
+  }
+  .meta-val {
+    font-size: 0.78rem;
+  }
+  /* Hide less important sidebar sections on mobile */
+  .profile-sidebar .sidebar-section:nth-child(n+3) {
+    display: none;
+  }
+  .top-navbar {
+    height: 50px;
+    padding: 0 14px;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .navbar-actions {
+    gap: 6px;
+  }
+  .navbar-actions .btn {
+    padding: 6px 10px;
+    font-size: 0.72rem;
+  }
+  .chat-messages-box {
+    padding: 16px;
+    gap: 14px;
+  }
+  .message-row {
+    max-width: 92%;
+  }
+  .message-bubble {
+    padding: 10px 14px;
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+  .quick-prompt-panel {
+    padding: 8px 14px;
+  }
+  .prompt-chip {
+    font-size: 0.72rem;
+    padding: 5px 10px;
+  }
+  .chat-input-bar {
+    padding: 12px 14px;
+  }
+  .chat-input-form {
+    gap: 8px;
+  }
+  .chat-input-form .form-control {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+  .chat-input-form .btn {
+    padding: 10px 14px;
+    font-size: 0.82rem;
+    min-width: 70px !important;
+  }
+}
+
+/* Extra small screens (iPhone SE etc.) */
+@media (max-width: 420px) {
+  .profile-sidebar {
+    max-height: 120px;
+    padding: 10px 12px;
+  }
+  .profile-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+  }
+  .chat-messages-box {
+    padding: 12px;
+  }
+}
+
+.sidebar-section {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 16px;
+}
+
+.sidebar-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.sidebar-section-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.profile-meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.meta-val {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: capitalize;
+}
+
+.profile-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.profile-tag {
+  background-color: var(--bg-main);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+/* Chat View Workspace (Right) */
+.chat-workspace {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-main);
+  overflow: hidden;
+}
+
+.chat-messages-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Chat Bubbles */
+.message-row {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  animation: fadeIn 0.2s ease;
+}
+
+.message-row.user {
+  align-self: flex-end;
+}
+
+.message-row.assistant {
+  align-self: flex-start;
+}
+
+.message-bubble {
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  white-space: pre-line;
+}
+
+.message-row.user .message-bubble {
+  background-color: var(--bg-bubble-user);
+  color: var(--text-primary);
+  border: 1px solid var(--color-border);
+}
+
+.message-row.assistant .message-bubble {
+  background-color: var(--bg-bubble-coach);
+  color: var(--text-primary);
+  border: 1px solid var(--color-border);
+}
+
+.message-sender {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 5px;
+  padding: 0 4px;
+}
+
+.message-row.user .message-sender {
+  align-self: flex-end;
+}
+
+/* Quick Inquiry Chips */
+.quick-prompt-panel {
+  padding: 12px 30px;
+  flex-shrink: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.quick-prompts-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.prompt-chip {
+  background-color: var(--bg-card);
+  border: 1px solid var(--color-border);
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.prompt-chip:hover {
+  background-color: var(--bg-bubble-user);
+  color: var(--text-primary);
+  border-color: var(--text-secondary);
+}
+
+/* Chat Input Bar */
+.chat-input-bar {
+  padding: 20px 30px;
+  background-color: var(--bg-card);
+  border-top: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.chat-input-form {
+  display: flex;
+  gap: 12px;
+}
+
+/* Typing indicator dots */
+.typing-dots {
+  display: inline-flex;
+  gap: 4px;
+}
+.typing-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--text-secondary);
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1.0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+

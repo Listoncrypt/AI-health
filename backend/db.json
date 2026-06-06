@@ -1,0 +1,437 @@
+{
+  "users": [],
+  "dailyLogs": [
+    {
+      "id": "mq2s700bulhd5",
+      "userId": "test_guest_123",
+      "date": "2026-06-06",
+      "steps": 8500,
+      "heartRate": 72,
+      "calories": 450,
+      "sleepHours": 5.5,
+      "activityMinutes": 15,
+      "dietQuality": "Poor",
+      "weight": 82.5
+    }
+  ],
+  "workoutPlans": [
+    {
+      "userId": "test_guest_123",
+      "planName": "HealthPulse AI INTERMEDIATE MUSCLE GAIN Plan (Local Fallback)",
+      "goal": "muscle gain",
+      "level": "intermediate",
+      "equipment": "dumbbells",
+      "days": [
+        {
+          "day": "Day 1: Upper Body Focus",
+          "exercises": [
+            {
+              "name": "Incline Push-ups",
+              "prescription": "4 sets x 12 reps",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            },
+            {
+              "name": "Doorframe/Towel Rows",
+              "prescription": "4 sets x 12 reps",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            },
+            {
+              "name": "Standard Push-ups",
+              "prescription": "3 sets x 12 reps",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            },
+            {
+              "name": "Plank",
+              "prescription": "3 sets x 45 sec",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            }
+          ]
+        },
+        {
+          "day": "Day 2: Cardio & Core",
+          "exercises": [
+            {
+              "name": "Jumping Jacks",
+              "prescription": "4 sets x 45 sec",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            },
+            {
+              "name": "High Knees",
+              "prescription": "4 sets x 40 sec",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            },
+            {
+              "name": "Bicycle Crunches",
+              "prescription": "4 sets x 15 reps",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            },
+            {
+              "name": "Dumbbell Shadow Boxing",
+              "prescription": "4 sets x 60 sec",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            }
+          ]
+        },
+        {
+          "day": "Day 3: Lower Body Focus",
+          "exercises": [
+            {
+              "name": "Bodyweight Squats",
+              "prescription": "4 sets x 15 reps",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            },
+            {
+              "name": "Lunges",
+              "prescription": "4 sets x 12 reps/leg",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            },
+            {
+              "name": "Dumbbell Goblet Squats",
+              "prescription": "3 sets x 12 reps (Medium)",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            },
+            {
+              "name": "Plank",
+              "prescription": "3 sets x 45 sec",
+              "description": "Perform matching your level (intermediate) using dumbbells."
+            }
+          ]
+        }
+      ],
+      "updatedAt": "2026-06-06T20:03:59.968Z"
+    },
+    {
+      "userId": "guest",
+      "planName": "HealthPulse AI BEGINNER WEIGHT LOSS Plan (Local Fallback)",
+      "goal": "weight loss",
+      "level": "beginner",
+      "equipment": "bodyweight",
+      "days": [
+        {
+          "day": "Day 1: Upper Body Focus",
+          "exercises": [
+            {
+              "name": "Incline Push-ups",
+              "prescription": "3 sets x 8 reps",
+              "description": "Perform matching your level (beginner) using bodyweight."
+            },
+            {
+              "name": "Doorframe/Towel Rows",
+              "prescription": "3 sets x 8 reps",
+              "description": "Perform matching your level (beginner) using bodyweight."
+            },
+            {
+              "name": "Standard Push-ups",
+              "prescription": "3 sets x 5 reps",
+              "description": "Perform matching your level (beginner) using bodyweight."
+            },
+            {
+              "name": "Plank",
+              "prescription": "3 sets x 20 sec",
+              "description": "Perform matching your level (beginner) using bodyweight."
+            }
+          ]
+        },
+        {
+          "day": "Day 2: Cardio & Core",
+          "exercises": [
+            {
+              "name": "Jumping Jacks",
+              "prescription": "3 sets x 30 sec",
+              "description": "Perform matching your level (beginner) using bodyweight."
+            },
+            {
+              "name": "High Knees",
+              "prescription": "3 sets x 20 sec",
+              "description": "Perform matching your level (beginner) using bodyweight."
+            },
+            {
+              "name": "Bicycle Crunches",
+              "prescription": "3 sets x 10 reps",
+              "description": "Perform matching your level (beginner) using bodyweight."
+            }
+          ]
+        },
+        {
+          "day": "Day 3: Lower Body Focus",
+          "exercises": [
+            {
+              "name": "Bodyweight Squats",
+              "prescription": "3 sets x 10 reps",
+              "description": "Perform matching your level (beginner) using bodyweight."
+            },
+            {
+              "name": "Lunges",
+              "prescription": "3 sets x 8 reps/leg",
+              "description": "Perform matching your level (beginner) using bodyweight."
+            },
+            {
+              "name": "Plank",
+              "prescription": "3 sets x 20 sec",
+              "description": "Perform matching your level (beginner) using bodyweight."
+            }
+          ]
+        }
+      ],
+      "updatedAt": "2026-06-06T20:21:34.528Z"
+    },
+    {
+      "userId": "guest_yysxoe",
+      "planName": "HealthPulse AI BEGINNER MUSCLE GAIN Plan",
+      "goal": "muscle gain",
+      "level": "beginner",
+      "equipment": "bodyweight",
+      "days": [
+        {
+          "day": "Day 1: Full Body Strength A",
+          "exercises": [
+            {
+              "name": "Bodyweight Squats",
+              "prescription": "3 sets x 10-12 reps",
+              "description": "Keep chest up, push hips back as if sitting in a chair, ensure knees align with toes."
+            },
+            {
+              "name": "Knee Push-ups (or regular)",
+              "prescription": "3 sets x 8-12 reps",
+              "description": "Hands slightly wider than shoulders, lower chest towards floor, keep body in a straight line from knees/feet to head."
+            },
+            {
+              "name": "Reverse Lunges",
+              "prescription": "3 sets x 8-10 reps per leg",
+              "description": "Step back with one leg, lower hips until both knees are bent at 90 degrees, keep front knee over ankle."
+            },
+            {
+              "name": "Plank",
+              "prescription": "3 sets x 20-30 seconds",
+              "description": "Keep body in a straight line from head to heels, engage core, don't let hips sag or rise too high."
+            },
+            {
+              "name": "Glute Bridges",
+              "prescription": "3 sets x 12-15 reps",
+              "description": "Lie on back, knees bent, feet flat. Lift hips off floor by squeezing glutes, creating a straight line from shoulders to knees."
+            },
+            {
+              "name": "Crunches",
+              "prescription": "3 sets x 15-20 reps",
+              "description": "Lie on back, knees bent, feet flat. Lift head and shoulders off floor, engaging abs, don't pull on neck."
+            }
+          ]
+        },
+        {
+          "day": "Day 2: Full Body Strength B",
+          "exercises": [
+            {
+              "name": "Incline Push-ups",
+              "prescription": "3 sets x 10-15 reps",
+              "description": "Place hands on an elevated surface (wall, sturdy bench), body straight, lower chest to surface."
+            },
+            {
+              "name": "Sumo Squats",
+              "prescription": "3 sets x 10-12 reps",
+              "description": "Feet wider than shoulder-width, toes pointed out. Lower hips, keeping chest up, knees track over toes."
+            },
+            {
+              "name": "Bird-Dog",
+              "prescription": "3 sets x 8-10 reps per side",
+              "description": "Start on all fours. Extend opposite arm and leg straight out, keeping core tight and back flat."
+            },
+            {
+              "name": "Calf Raises",
+              "prescription": "3 sets x 15-20 reps",
+              "description": "Stand tall, slowly rise onto the balls of your feet, hold briefly at the top, then lower with control."
+            },
+            {
+              "name": "Superman",
+              "prescription": "3 sets x 12-15 reps",
+              "description": "Lie face down, arms and legs extended. Lift chest, arms, and legs off the floor simultaneously, squeezing lower back and glutes."
+            },
+            {
+              "name": "Leg Raises",
+              "prescription": "3 sets x 12-15 reps",
+              "description": "Lie on back, hands under lower back for support (optional). Keep legs straight, slowly lift to 90 degrees, then lower without touching the floor."
+            }
+          ]
+        },
+        {
+          "day": "Day 3: Full Body Strength C",
+          "exercises": [
+            {
+              "name": "Pike Push-ups",
+              "prescription": "3 sets x 8-12 reps",
+              "description": "Start in an inverted V-shape with hips high. Bend elbows and lower head towards the floor between your hands, targeting shoulders."
+            },
+            {
+              "name": "Step-ups",
+              "prescription": "3 sets x 10-12 reps per leg",
+              "description": "Use a sturdy chair or step. Step up with one leg, pushing through the heel, bring the other foot up, then step back down."
+            },
+            {
+              "name": "Wall Sit",
+              "prescription": "3 sets x 20-40 seconds",
+              "description": "Lean against a wall, slide down until knees are at 90 degrees, thighs parallel to the floor, hold this position."
+            },
+            {
+              "name": "Mountain Climbers",
+              "prescription": "3 sets x 30-45 seconds",
+              "description": "Start in a plank position. Bring one knee towards your chest, then switch quickly, maintaining a strong core."
+            },
+            {
+              "name": "Russian Twists",
+              "prescription": "3 sets x 15-20 reps per side",
+              "description": "Sit on floor, knees bent, feet flat (lift feet for challenge). Lean back slightly, twist torso side to side, touching hands to the floor."
+            },
+            {
+              "name": "Chair Dips (Modified)",
+              "prescription": "3 sets x 8-12 reps",
+              "description": "Sit on edge of sturdy chair, hands beside hips. Slide hips off, bend elbows to lower body, then push back up. Keep feet closer to make it easier."
+            }
+          ]
+        }
+      ],
+      "updatedAt": "2026-06-06T20:45:53.389Z"
+    },
+    {
+      "userId": "guest_lecg5j",
+      "planName": "HealthPulse AI BEGINNER WEIGHT LOSS Plan",
+      "goal": "weight loss",
+      "level": "beginner",
+      "equipment": "bodyweight",
+      "days": [
+        {
+          "day": "Day 1: Full Body Strength & Cardio",
+          "exercises": [
+            {
+              "name": "Bodyweight Squats",
+              "prescription": "3 sets x 12 reps",
+              "description": "Keep your chest up, sit back into your hips, and push your knees outward as you lower down."
+            },
+            {
+              "name": "Incline Push-Ups",
+              "prescription": "3 sets x 10 reps",
+              "description": "Place hands on an elevated surface like a sturdy bench or wall. Keep your body in a straight line as you lower your chest."
+            },
+            {
+              "name": "Jumping Jacks",
+              "prescription": "3 sets x 30 seconds",
+              "description": "Land softly on the balls of your feet and maintain a steady, rhythmic breathing pattern."
+            },
+            {
+              "name": "Plank Hold",
+              "prescription": "3 sets x 20-30 seconds",
+              "description": "Engage your core, squeeze your glutes, and ensure your body forms a straight line from head to heels."
+            }
+          ]
+        },
+        {
+          "day": "Day 2: Core & Lower Body Focus",
+          "exercises": [
+            {
+              "name": "Reverse Lunges",
+              "prescription": "3 sets x 8 reps per leg",
+              "description": "Step backward, lowering your hips until your back knee is just above the floor. Keep front knee behind your toes."
+            },
+            {
+              "name": "Glute Bridges",
+              "prescription": "3 sets x 12 reps",
+              "description": "Lie on your back with knees bent. Drive through your heels to lift your hips, squeezing your glutes at the top."
+            },
+            {
+              "name": "Mountain Climbers",
+              "prescription": "3 sets x 30 seconds",
+              "description": "From a plank position, drive your knees toward your chest alternately at a controlled, brisk pace."
+            },
+            {
+              "name": "Bird Dog",
+              "prescription": "3 sets x 10 reps per side",
+              "description": "On hands and knees, reach opposite arm forward and opposite leg backward. Keep your hips level and spine neutral."
+            }
+          ]
+        },
+        {
+          "day": "Day 3: Metabolic Conditioning & Upper Body",
+          "exercises": [
+            {
+              "name": "Sumo Squats",
+              "prescription": "3 sets x 12 reps",
+              "description": "Take a wide stance with toes pointed outward. Lower your hips while keeping your torso as upright as possible."
+            },
+            {
+              "name": "Prone Y-T-W Extensions",
+              "prescription": "3 sets x 8 reps per position",
+              "description": "Lie face down and raise your arms to form the letters Y, T, and W to target your upper back muscles."
+            },
+            {
+              "name": "High Knees (Low Impact)",
+              "prescription": "3 sets x 40 seconds",
+              "description": "March in place, bringing your knees up to hip height. Pump your arms to keep your heart rate up."
+            },
+            {
+              "name": "Dead Bug",
+              "prescription": "3 sets x 10 reps per side",
+              "description": "Lie on your back, press your lower back firmly into the floor, and slowly lower opposite arm and leg."
+            }
+          ]
+        }
+      ],
+      "updatedAt": "2026-06-06T20:52:25.830Z"
+    }
+  ],
+  "nutritionPlans": [
+    {
+      "userId": "guest_lecg5j",
+      "dietType": "standard",
+      "budgetTier": "medium",
+      "totalCalories": 1750,
+      "totalCost": 15.5,
+      "meals": [
+        {
+          "category": "Breakfast",
+          "name": "Oatmeal with Berries and Nuts",
+          "calories": 450,
+          "cost": 3,
+          "ingredients": [
+            "1/2 cup rolled oats",
+            "1 cup water or milk",
+            "1/2 cup mixed berries (fresh or frozen)",
+            "1/4 cup chopped walnuts",
+            "1 tbsp honey or maple syrup"
+          ],
+          "recipe": "Combine oats and water/milk in a saucepan. Bring to a boil, then reduce heat and simmer for 5-7 minutes, stirring occasionally, until liquid is absorbed. Pour into a bowl, top with mixed berries, walnuts, and a drizzle of honey."
+        },
+        {
+          "category": "Lunch",
+          "name": "Turkey and Hummus Wrap with Baby Carrots",
+          "calories": 550,
+          "cost": 5.5,
+          "ingredients": [
+            "1 large whole wheat tortilla",
+            "4 oz sliced turkey breast",
+            "2 tbsp hummus",
+            "1/2 cup shredded lettuce",
+            "1/4 cup diced tomato",
+            "1/2 cup baby carrots"
+          ],
+          "recipe": "Lay the tortilla flat. Spread hummus evenly over the tortilla, leaving a small border. Layer turkey, lettuce, and tomato over the hummus. Roll the tortilla tightly. Serve with baby carrots on the side."
+        },
+        {
+          "category": "Dinner",
+          "name": "Baked Salmon with Roasted Sweet Potato and Green Beans",
+          "calories": 750,
+          "cost": 7,
+          "ingredients": [
+            "6 oz salmon fillet",
+            "1 medium sweet potato",
+            "1 cup fresh green beans",
+            "1 tbsp olive oil",
+            "1/2 tsp garlic powder",
+            "Salt and black pepper to taste",
+            "Lemon wedge for serving (optional)"
+          ],
+          "recipe": "Preheat oven to 400°F (200°C). Wash and peel the sweet potato, then cut into 1-inch cubes. Trim the ends of the green beans. In a bowl, toss sweet potato and green beans with 1/2 tbsp olive oil, salt, pepper, and garlic powder. Spread them on a baking sheet. Place the salmon fillet on the same baking sheet, drizzle with remaining 1/2 tbsp olive oil, and season with salt and pepper. Bake for 15-20 minutes, or until salmon is cooked through and vegetables are tender. Serve with a lemon wedge."
+        }
+      ],
+      "updatedAt": "2026-06-06T20:49:39.633Z"
+    }
+  ],
+  "favoriteMeals": []
+}
